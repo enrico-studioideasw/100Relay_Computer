@@ -8,7 +8,7 @@ Nella documentazione troverete foto, schema a blocchi della macchina, pcb e sch 
 Il risultato è:
 Una scheda madre che raccoglie tutti i componenti separandone le unità logiche.
 Una macchina con un microcodice minimale ma computazionalmente completo.
-32 bytes di rom e 4 nibbles di ram. Programma in rome  ram per i dati. Nessun I/O ma un led per ciascuna cella di ram. 
+32 bytes di rom e 4 nibbles di ram (potenzialmente espandibili a 16). Programma in rome  ram per i dati. Nessun I/O ma un led per ciascuna cella di ram. 
 Mantenendo la solia dei 100 rele non credo sia possibile fare di meglio.
 
 Semplificazioni:
@@ -30,14 +30,14 @@ HCF      0000XXXX (oops.. HALT)
 JZ DEST  11XXXXXX
 LD       0110XXXX Load direct, azzera flag 
 LDA      0100XXXX Load from ram addr 
-SUM      0111XXXX somma ad w
+SUM      0111XXXX somma ad A il conentuto della cella XXXX 
 STA      1000XXXX copia A sulla cella indicata di ram
 
 Una cella di ROM vuota causa immediatamente un HALT,  quindi senza programma la macchian si ferma subito (Halt and Catch Fire ..  forse)
 
 Note:
 - per decrementare A basta sommare F. 
-- Per una jump basta qualcosa tipo: STA 3, LDA 0, JZ XX, LDA 3  .. non ho uno stack ma qualcosa si fa lo stesso.
+- Per una jump basta qualcosa tipo: STA 3, LD 0, JZ XX, LDA 3  .. non ho uno stack ma qualcosa per mantenere A si fa lo stesso. Certo che più ram saebbe meglio.
 
 qualche demo:
 Faccina sorridente sui led di stato della ram:
