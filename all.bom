@@ -1,0 +1,254 @@
+Partlist exported from C:/Users/Enrico Betti/Desktop/DatiEnrico/idee/relepc_svarioni/relepc_2026/all.sch at 05/07/2026 09:20:58
+
+Assembly variant: 
+
+Part  Value           Device          Package  Description                                            
+C1    1000uF          CPOL-EUE5-10.5  E5-10,5  POLARIZED CAPACITOR, European symbol                   
+C2    1000uF          CPOL-EUE3.5-10  E3,5-10  POLARIZED CAPACITOR, European symbol                   
+C3    1000uF          CPOL-EUE3.5-10  E3,5-10  POLARIZED CAPACITOR, European symbol                   
+C4    1000uF          CPOL-EUE3.5-10  E3,5-10  POLARIZED CAPACITOR, European symbol                   
+C5    1000uF          CPOL-EUE3.5-10  E3,5-10  POLARIZED CAPACITOR, European symbol                   
+D1    1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D2    1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D3    1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D4    1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D5    1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D6    1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D29   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D30   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D31   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D32   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D33   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D34   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D35   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D36   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D37   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D38   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D39   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D40   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D41   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D42   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D43   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D44   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D45   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D46   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D47   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D48   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D49   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+D50   1N4004VERTICALE 1N4004VERTICALE ZDIO-2.5 DIODE                                                  
+JP1                   JP8Q            JP8Q     JUMPER                                                 
+JP2                   JP8Q            JP8Q     JUMPER                                                 
+JP3                   JP8Q            JP8Q     JUMPER                                                 
+JP4                   JP8Q            JP8Q     JUMPER                                                 
+JP5                   JP8Q            JP8Q     JUMPER                                                 
+JP6                   JP8Q            JP8Q     JUMPER                                                 
+JP7                   JP8Q            JP8Q     JUMPER                                                 
+JP8                   JP8Q            JP8Q     JUMPER                                                 
+JP9                   JP8Q            JP8Q     JUMPER                                                 
+JP10                  JP8Q            JP8Q     JUMPER                                                 
+JP11                  JP8Q            JP8Q     JUMPER                                                 
+JP12                  JP8Q            JP8Q     JUMPER                                                 
+JP13                  JP8Q            JP8Q     JUMPER                                                 
+JP14                  JP8Q            JP8Q     JUMPER                                                 
+JP15                  JP8Q            JP8Q     JUMPER                                                 
+JP16                  JP8Q            JP8Q     JUMPER                                                 
+JP17                  JP8Q            JP8Q     JUMPER                                                 
+JP18                  JP8Q            JP8Q     JUMPER                                                 
+JP19                  JP8Q            JP8Q     JUMPER                                                 
+JP20                  JP8Q            JP8Q     JUMPER                                                 
+JP21                  JP8Q            JP8Q     JUMPER                                                 
+JP22                  JP8Q            JP8Q     JUMPER                                                 
+JP23                  JP8Q            JP8Q     JUMPER                                                 
+JP24                  JP8Q            JP8Q     JUMPER                                                 
+JP25                  JP8Q            JP8Q     JUMPER                                                 
+JP26                  JP8Q            JP8Q     JUMPER                                                 
+JP27                  JP8Q            JP8Q     JUMPER                                                 
+JP28                  JP8Q            JP8Q     JUMPER                                                 
+JP29                  JP8Q            JP8Q     JUMPER                                                 
+JP30                  JP8Q            JP8Q     JUMPER                                                 
+JP31                  JP8Q            JP8Q     JUMPER                                                 
+JP32                  JP8Q            JP8Q     JUMPER                                                 
+K1    G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K2    G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K3    G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K4    G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K5    G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K6    G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K7    G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K8    G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K9    G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K10   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K11   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K12   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K13   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K14   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K15   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K16   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K17   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K18   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K19   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K20   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K21   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K22   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K23   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K24   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K25   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K26   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K27   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K28   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K29   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K30   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K31   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K32   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K33   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K34   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K35   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K36   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K37   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K38   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K39   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K40   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K41   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K42   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K43   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K44   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K45   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K46   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K47   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K48   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K49   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K50   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K51   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K52   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K53   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K54   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K55   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K56   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K57   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K58   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K59   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K60   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K61   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K62   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K63   G5V-2           G5V-2           G5V-2    OMRON PCB Relay                                        
+K64   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K65   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K66   G5V-2           G5V-2           G5V-2    OMRON PCB Relay                                        
+K67   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K68   G5V-2           G5V-2           G5V-2    OMRON PCB Relay                                        
+K69   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K70   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K71   G5V-2           G5V-2           G5V-2    OMRON PCB Relay                                        
+K72   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K73   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K74   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K75   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K76   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K77   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K78   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K79   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K80   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K81   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K82   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K83   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K84   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K85   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K86   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K87   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K88   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K89   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K90   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K91   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K92   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K93   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K94   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K95   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K96   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K97   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K98   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K99   G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+K100  G6J-2P-Y        G6J-2P-Y        G6J-2P-Y Surface-Mounting Signal Relay - G6J-Y 5.7 x 10.6 x 9 mm
+LED1                  LED5MM          LED5MM   LED                                                    
+LED2                  LED5MM          LED5MM   LED                                                    
+LED3                  LED5MM          LED5MM   LED                                                    
+LED4                  LED5MM          LED5MM   LED                                                    
+LED5                  LED5MM          LED5MM   LED                                                    
+LED6                  LED5MM          LED5MM   LED                                                    
+LED7                  LED5MM          LED5MM   LED                                                    
+LED8                  LED5MM          LED5MM   LED                                                    
+LED9                  LED5MM          LED5MM   LED                                                    
+LED10                 LED5MM          LED5MM   LED                                                    
+LED11                 LED5MM          LED5MM   LED                                                    
+LED12                 LED5MM          LED5MM   LED                                                    
+LED13                 LED5MM          LED5MM   LED                                                    
+LED14                 LED5MM          LED5MM   LED                                                    
+LED15                 LED5MM          LED5MM   LED                                                    
+LED16                 LED5MM          LED5MM   LED                                                    
+LED17                 LED5MM          LED5MM   LED                                                    
+LED18                 LED5MM          LED5MM   LED                                                    
+LED19                 LED5MM          LED5MM   LED                                                    
+LED20                 LED5MM          LED5MM   LED                                                    
+LED21                 LED5MM          LED5MM   LED                                                    
+LED22                 LED5MM          LED5MM   LED                                                    
+LED23                 LED5MM          LED5MM   LED                                                    
+LED24                 LED5MM          LED5MM   LED                                                    
+LED25                 LED3MM          LED3MM   LED                                                    
+LED26                 LED3MM          LED3MM   LED                                                    
+LED27                 LED3MM          LED3MM   LED                                                    
+LED28                 LED3MM          LED3MM   LED                                                    
+LED29                 LED3MM          LED3MM   LED                                                    
+LED30                 LED3MM          LED3MM   LED                                                    
+LED31                 LED3MM          LED3MM   LED                                                    
+LED32                 LED3MM          LED3MM   LED                                                    
+LED33                 LED3MM          LED3MM   LED                                                    
+LED34                 LED3MM          LED3MM   LED                                                    
+LED35                 LED3MM          LED3MM   LED                                                    
+LED36                 LED3MM          LED3MM   LED                                                    
+LED37                 LED3MM          LED3MM   LED                                                    
+R1                    R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R2                    R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R3                    R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R4                    R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R5                    R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R6                    R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R7                    R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R8                    R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R9                    R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R10                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R11                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R12                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R13                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R14                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R15                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R16                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R17                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R18                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R19                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R20                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R21                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R22                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R23                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R24                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R25                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R26                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R27                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R28                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R29                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R30                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R31                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R32                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R33                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R34                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R35                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R36                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R37                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R38                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R39                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R40                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R41                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R42                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R43                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R44                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R45                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+R46                   R-EU_0204/2V    0204V    RESISTOR, European symbol                              
+X1    1751248         1751248         1751248  MKDS 1/ 2-3,5 Printklemme                              

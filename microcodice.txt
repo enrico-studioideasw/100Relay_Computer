@@ -1,0 +1,126 @@
+Calcolo del microcodice
+_______________________
+
+          ENTRATE                                USCITE
+CODICE    CLK1  CLK2  A4  A5  A6  A7  ZERO-      L_INST-     L_A-  L_RES-  L_PC-  OPERATION   HCF- RAMWR- IM-
+                                               CLK1-&clk2-   
+
+HCF       X     1     0   0   0   0   X                                                      0                 HCF-=(A4+A5+A6+A7+CLK2-) 
+JZ        X     1     X   X   1   1   0                                     0                                  L_PC-=NOT(clk2+A6+A7+ZERO)
+LD        X     1     0   1   1   0   X                                                                    1   IM-=A5 L_A-=NOT(clk2+A6+A7-), L_RES-=CKL1-+CLK0
+LDA       X     1     0   0   1   0   X                                                                    0           L_A-=NOT(clk2+A6+A7-)  L_RES-=CKL1-+CLK0
+SUM       X     1     1   1   1   0   X                                                                        OPERATION=A4, A/B-=A5 L_A-=NOT(clk2+A6+A7-) L_RES-=CKL1-+CLK0
+STA       X     1     0   0   0   1   X                                                              1         RAMWR-=NOT(clk2+A4-+A5-+A6-+A7) 
+
+DEC=SUM(-1)=01111111 (A7..A0). 
+
+
+Sono finalmente sulla logica di controllo, con la macchina completa. 
+
+Queste le Istruzioni:
+HCF      0000XXXX (oops.. HALT) 
+JZ DEST  11XXXXXX
+LD       0110XXXX Load direct, azzera flag 
+LDA      0100XXXX Load from ram addr 
+SUM      0111XXXX somma ad w
+STA      1000XXXX copia A sulla cella indicata di ram
+
+Le entrate sono CLK1, CLK2,  A4,  A5,  A6,  A7,  ZERO-
+
+Questi i bit di controllo da modificare:
+
+L_INST-    Latch dell' istruzione. Prima cosa da memorizzare prima di fare il resto. La prendo quando clock vale 00.
+L_PC-      Latch del program counter. Si usa solo in una jump, almeno da quando clock vale 01.
+IM-        Selettore per ingresso B della alu: 4 bit bassi di istruzione oppure Memoria ram.  (secondo caso attivo basso)
+L_A-       Latch dell'accumulatore. Almeno da clock=10.
+L_RES-     Latch del risultato ALU, quando il clock vale 01. 
+OPERATION  Selettore per la ALU: se 0 passa B, se 1 fa la somma di B  e accumulatore. 
+RAMWR-     Scrittura RAM: 1 per lettura, 0 per scrittura. 
+
+Queste Le equazioni   (A- significa ovviamente "A negato", attenzione a ZERO=NOT(ZERO-)) :
+
+Dunque, vediamo se ci siamo con le equazioni:
+L_INST- = CLK1 + CLK2
+HCF-     =  A4 + A5 + A6 + A7 + CLK2- 
+L_PC-    =  CLK2- + A7- + A6- + ZERO-
+AB-      =  A5
+L_A-     =  CLK1- + CLK2 + A7 + A6- 
+L_RES-   =  CLK1 + CLK2-
+OPERATION=  A4
+L_RES-   =  CKL1- + CLK2
+RAMWR-   =  CLK2- + A7- + A6 + A5 + A4
+
+
+Direi che sono abbastanza semplici..
+Qui la tabellina con tutte le possibili combinazioni per ciascuna istruzione 
+Ho messo una X nel caso l'ingresso non sia importante e vedo cosa ottengo sulle uscite.
+Devo verificare per ciascun comando che nei 4 possibili stati di clock (00,01,10,11) le uscite azionino i buffer corretti nel mio schema.
+Ovviamente qualsiasi aiuto e segnalazione di errore è gradito, PRIMA che il circuito fumi. 
+
+ENTRATE                                           USCITE
+CODICE    CLK1  CLK2  A7  A6  A5  A4  ZERO-       L_INST-   L_A-  L_RES-  L_PC-  OPERATION   HCF- RAMWR-  IM-
+HALT        0    0     0   0   0   0   X            0         1      1       1        0        1     1     0
+HALT        X    1     0   0   0   0   X            1         1      1       1        0        0     1     0
+
+JZ          0    0     1   1   0   0   X            0         1      1       1        0        1     1     0 
+JZ          X    1     1   1   0   0   X            1         1      1       0        0        1     1     0
+
+
+L_INST-   = CLK1 + CLK2
+HCF-      = A4 + A5 + A6 + A7 + CLK2-
+L_PC-     = CLK2- + A7- + A6- + ZERO-
+AB / IM   = A5
+L_A-      = CLK1- + CLK2 + A7 + A6-
+L_RES-    = CLK1 + CLK2-
+OPERATION = A4
+RAMWR-    = CLK2- + A7- + A6 + A5 + A4
+
+
+Note:
+- per decrementare A basta sommare F. 
+- Per una jump basta qualcosa tipo: STA 3, LDA 0, JZ XX, LDA 3  .. non ho uno stack ma qualcosa si fa lo stesso.
+
+E qui qualche demo:
+Faccina sorridente sui led di stato della ram:
+
+LD 9
+STA 0
+LD 0
+STA 1
+LD 9
+STA 2
+LD 6
+STA 3
+HCF (oops.. HALT) 
+
+Diagonale
+
+LD 8
+STA 0
+LD 4
+STA 1
+LD 2
+STA 2
+LD 1
+STA 3
+HCF
+
+Prodotto:
+RAM0 = moltiplicando
+RAM1 = moltiplicatore
+RAM2 = risultato
+RAMF = 15 (-1)
+00 LD 0
+01 STA 2          ; risultato = 0
+LOOP:
+02 LDA 1
+03 JZ 13 - END          ; finito?
+04 STA 3          ; salvo contatore
+05 LDA 2
+06 SUM 0
+07 STA 2          ; risultato += moltiplicando
+08 LDA 3
+09 SUM F
+10 STA 1          ; contatore--
+11 JMP 02 LOOP
+12 END: HCF (oops.. halt)
