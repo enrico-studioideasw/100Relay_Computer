@@ -24,119 +24,24 @@ Il mio scopo era stare sotto i  100 rele, usando componenti commerciali a basso 
 12 rele per la ALU
 Il resto per microcodice e logiche varie. Quindi scopo non raggiunto ma macchina completa con esattamente 100 rele. Potremmo averne circa 90 con solo 16 bytes di rom, ma si rinuncia alla possibilita di programmi decenti. 
 
-Istruzioni:
-JZ    11XXXXXX 
-salta se zero, (2 bit il codice, 6 bit la destinazione)
-if (Z) PC<-XXXXXX
 
-HALT  0000XXXX
-Interrompe il clock - si riparte da 0 con un reset.
-(halt)
+Ho dovuto ridurre all'osso il microcodice, quindi queste sono le Istruzioni:
+HCF      0000XXXX (oops.. HALT) 
+JZ DEST  11XXXXXX
+LD       0110XXXX Load direct, azzera flag 
+LDA      0100XXXX Load from ram addr 
+SUM      0111XXXX somma ad w
+STA      1000XXXX copia A sulla cella indicata di ram
 
-CMP2  0100XXXX
-Complemento a 2 del numero in accumulatore
-(A = A- + 1)
+Una cella di ROM vuota causa immediatamente un HALT,  quindi senza programma la macchian si ferma subito (Halt and Catch Fire ..  forse)
 
-LDA   0101XXXX
-Carica una cella di memoria in accumulatore
-A=[XXXX]
+Note:
+- per decrementare A basta sommare F. 
+- Per una jump basta qualcosa tipo: STA 3, LDA 0, JZ XX, LDA 3  .. non ho uno stack ma qualcosa si fa lo stesso.
 
-LD    1000XXXX
-Carica un numero in accumulatore
-A=XXXX
+qualche demo:
+Faccina sorridente sui led di stato della ram:
 
-DEC   1001XXXX
-Decrementa l'accumulatore
-
-STA   0110XXXX
-Salva l'accumulatore su una cella di memoria 
-[XXXX]=A
-
-SUM   0111XXXX
-Somma l'accumulatore con la cella di memoria 
-A=A + [XXXX]
-
-Complemento di un numero
-0 LD 3
-1 CMP2 
-2 STA 0
-3 HALT
-Somma di due numeri
-0 LD 3
-1 SUM 2
-2 STA 0
-3 HALT
-
-Prodotto di due numeri 
-0 LD 3
-1 STA 1  #Metto 3 su cella 1
-2 LD 2
-3 STA 2  #metto 2 su cella 2
-4 LD 0 
-5 STA 0  #preparo il risultato su cella 0 
-6 LDA 0  #aggiungo [1] alla somma 
-7 SUM 1
-8 STA 0
-9 LDA 2  #decremento [2]
-10 DEC
-11  STA 2
-12  JZ 15 #Se sono a zero salto al termine
-13  LD 0 
-14  JZ 7  #torno in cima al ciclo
-15  HALT 
- 
-; countdown da 9 a 0 su ACC/LED
-0 LD 9
-1 STA 0
-2 LDA 0
-3 DEC
-4 STA 0
-5 JZ 8
-6 LD 0
-7 JZ 2
-8 HALT
-
-; somma 1+2+3+...+N
-; N=5, risultato in RAM[0]
-0 LD 0
-1 STA 0
-2 LD 5
-3 STA 1
-
-4 LDA 0
-5 SUM 1
-6 STA 0
-
-7 LDA 1
-8 DEC
-9 STA 1
-10 JZ 13
-
-11 LD 0
-12 JZ 4
-
-13 HALT
-
-; lampeggio alternato sui 4 bit: 1010 / 0101
-; se le RAM hanno LED, scrive in RAM[0]
-0 LD 10
-1 STA 0
-2 LD 5
-3 STA 0
-4 LD 0
-5 JZ 0
-
-; negazione/sottrazione: 7 - 3
-; fa 7 + complemento2(3)
-0 LD 3
-1 CMP2
-2 STA 1
-3 LD 7
-4 SUM 1
-5 STA 0
-6 HALT
-
-;Faccina sorridente
 LD 9
 STA 0
 LD 0
@@ -145,4 +50,36 @@ LD 9
 STA 2
 LD 6
 STA 3
-HALT
+HCF (oops.. HALT) 
+
+Diagonale
+
+LD 8
+STA 0
+LD 4
+STA 1
+LD 2
+STA 2
+LD 1
+STA 3
+HCF
+
+Prodotto:
+RAM0 = moltiplicando
+RAM1 = moltiplicatore
+RAM2 = risultato
+RAMF = 15 (-1)
+00 LD 0
+01 STA 2          ; risultato = 0
+LOOP:
+02 LDA 1
+03 JZ 13 - END          ; finito?
+04 STA 3          ; salvo contatore
+05 LDA 2
+06 SUM 0
+07 STA 2          ; risultato += moltiplicando
+08 LDA 3
+09 SUM F
+10 STA 1          ; contatore--
+11 JMP 02 LOOP
+12 END: HCF (oops.. halt)
