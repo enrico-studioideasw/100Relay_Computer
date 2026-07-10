@@ -9,7 +9,7 @@ Il risultato è:
 Una scheda madre che raccoglie tutti i componenti separandone le unità logiche.
 Una macchina con un microcodice minimale ma computazionalmente completo.
 32 bytes di rom e 4 nibbles di ram (potenzialmente espandibili a 16). Programma in rome  ram per i dati. Nessun I/O ma un led per ciascuna cella di ram. 
-Mantenendo la solia dei 100 rele non credo sia possibile fare di meglio.
+Mantenendo la soglia dei 100 rele non credo sia possibile fare di meglio.
 
 Semplificazioni:
 I rele sono usati con logica positiva: "1" se c'e' abbastanza tensione da far scattare la bobina, "0" in tutti gli altri casi. Questo semplifica molto la progettazione.. e permette di abbinare facilmente OR e AND a diodi,  principalmente utilizzati per il microcodice.
